@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="http://tempuri.org/UI.xsd">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Back_ro">
+		<value>Inapoi</value>
+	</data>
+	<data name="First_ro">
+		<value>Primul</value>
+	</data>
+	<data name="Next_ro">
+		<value>Urmatorul</value>
+	</data>
+	<data name="Last_ro">
+		<value>Ultimul</value>
+	</data>
+	<data name="Insert_ro">
+		<value>Adauga</value>
+	</data>
+	<data name="Update_ro">
+		<value>Modifica</value>
+	</data>
+	<data name="Delete_ro">
+		<value>Sterge</value>
+	</data>
+	<data name="Print_ro">
+		<value>Imprima</value>
+	</data>
+	<data name="Ok_ro">
+		<value>Ok</value>
+	</data>
+	<data name="Cancel_ro">
+		<value>Renunta</value>
+	</data>
+	<data name="Details_ro">
+		<value>Detalii</value>
+	</data>
+	<data name="List_ro">
+		<value>Lista</value>
+	</data>
+	<data name="Search_ro">
+		<value>Cauta</value>
+	</data>
+	<data name="Preview_ro">
+		<value>&amp;Vizualizeaza</value>
+	</data>
+</root>

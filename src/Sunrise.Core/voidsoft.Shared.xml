@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>voidsoft.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:voidsoft.Shared.Log">
+            <summary>
+            Logs exceptions.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.Log.LogError(System.String)">
+            <summary>
+            Log the specified error message.
+            </summary>
+            <param name="errorMessage"></param>
+        </member>
+        <member name="T:voidsoft.Shared.BusinessLayer">
+            <summary>
+            Business Layer Class
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.#ctor(voidsoft.Shared.TableMetadata)">
+            <summary>
+            Default ctor using TableMetadata.
+            </summary>
+            <param name="itm"></param>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.#ctor(voidsoft.DataBlock.EDatabase,System.String,voidsoft.DataBlock.EProviderType,voidsoft.DataBlock.DatabaseField[],System.String)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="database"></param>
+            <param name="connectionString"></param>
+            <param name="providerType"></param>
+            <param name="databaseFields"></param>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.GetData">
+            <summary>
+            Loads the data into the dataset.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.GetData(System.String)">
+            <summary>
+             Loads the data into the dataset.
+            </summary>
+            <param name="sqlCommand">The sql command used to load data.</param>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.Create">
+            <summary>
+            Creates a businnes objects using the default TableMetadata.
+            This is the "default" implementation for business
+            objects which "modify" only one database table. 
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.Create(voidsoft.Shared.TableMetadata,voidsoft.Shared.TableMetadata[])">
+            <summary>
+            Creates a business object. 
+            </summary>
+            <param name="mainTable">The main TableMetadata</param>
+            <param name="secondaryTables">Secondary TableMetadata </param>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.Update(voidsoft.Shared.TableMetadata)">
+            <summary>
+            Updates a business object.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.Update(voidsoft.Shared.TableMetadata,voidsoft.Shared.TableMetadata[])">
+            <summary>
+            Updates a business object.
+            </summary>
+            <param name="mainTable">The main table</param>
+            <param name="secondaryTables">Secondary tables</param>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.Delete(voidsoft.Shared.TableMetadata,voidsoft.Shared.TableMetadata[])">
+            <summary>
+            Deletes a business object.
+            </summary>
+            <param name="mainTable"></param>
+            <param name="secondaryTables"></param>
+        </member>
+        <member name="M:voidsoft.Shared.BusinessLayer.Delete">
+            <summary>
+            Deletes a business record.
+            </summary>
+        </member>
+        <member name="P:voidsoft.Shared.BusinessLayer.RecordCount">
+            <summary>
+            The number of loaded records.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Shared.SharedData">
+            <summary>
+            Holds user/system informations.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.loadedModules">
+            <summary>
+            ICollection with the loaded modules.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.databaseServerType">
+            <summary>
+            The database server type which is currently used
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.connectionString">
+            <summary>
+            the connection string used to connect to the database
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.providerType">
+            <summary>
+            the database provider type
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.userName">
+            <summary>
+            The name of the logger user.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.userPassword">
+            <summary>
+            The password of the logged user.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.userID">
+            <summary>
+            The database ID of the logged user.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.isAdministrator">
+            <summary>
+            Flag to know if the logged user is administrator or not.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.localizationName">
+            <summary>
+            string used in localization. This string is
+            used to identity the current language.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.companyName">
+            <summary>
+            The name of the company
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.companyAddress">
+            <summary>
+            The company address.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.companyLogoPath">
+            <summary>
+            The path to the picture's file which contains the company logo.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.SharedData.companyID">
+            <summary>
+            The company ID from the system darabase.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Shared.Localization">
+            <summary>
+            Summary description for Localization.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.Localization.GetCultureInfoResource(System.String,System.String,System.Reflection.Assembly)">
+            <summary>
+            Returns the specified resource using the internal convention
+            for culture infor aware resources.                                   		
+            </summary>
+            <param name="resourceID">The resource identificator.</param>
+            <param name="resourceName">The resource filename</param>
+            <param name="asm">Assembly in which the resource resides.</param>
+            <returns>The resource value. </returns>
+        </member>
+        <member name="M:voidsoft.Shared.Localization.GetResource(System.String,System.String,System.Reflection.Assembly)">
+            <summary>
+            Returns the specified resource.
+            </summary>
+            <param name="resourceID">The resource identificator</param>
+            <param name="resourceName">The resource filename</param>
+            <param name="asm">Assembly in which the resource resides.</param>
+            <returns>The resource value.</returns>
+        </member>
+        <member name="T:voidsoft.Shared.UserLog">
+            <summary>
+            Logs user actions
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.UserLog.LogUserAction(System.String,System.String)">
+            <summary>
+            Logs the user actions.
+            Uses data from Shared.
+            </summary>
+            <param name="userAction"></param>
+            <param name="details"></param>
+        </member>
+        <member name="M:voidsoft.Shared.UserLog.LogUserAction(System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="userID"></param>
+            <param name="userName"></param>
+            <param name="userAction"></param>
+            <param name="details"></param>
+            <param name="logDate"></param>
+        </member>
+        <member name="T:voidsoft.Shared.TableMetadata">
+            <summary>
+            Class which describes the metadata for a database table
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.TableMetadata.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.TableMetadata.SetFieldValue(System.String,System.Object)">
+            <summary>
+            Allows you the set the value of a field using his name.
+            Throws a ArgumentException if no field with the specified 
+            name is found.
+            </summary>
+            <param name="fieldName">The field name</param>
+            <param name="fieldValue">The values to be set.</param>
+        </member>
+        <member name="M:voidsoft.Shared.TableMetadata.SetFieldValue(System.Int32,System.Object)">
+            <summary>
+            Allows you the set the value of a field by his index.
+            Throws a ArgumentException if no field with the index is wrong.
+            </summary>
+            <param name="fieldIndex">The field name</param>
+            <param name="fieldValue">The values to be set.</param>
+        </member>
+        <member name="P:voidsoft.Shared.TableMetadata.TableFields">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:voidsoft.Shared.TableMetadata.TableName">
+            <summary>
+            The name of the table
+            </summary>
+        </member>
+        <member name="T:voidsoft.Shared.CoreForm">
+            <summary>
+            The base class for all module's UI.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.CoreForm.dataExplorer">
+            <summary>
+            IDataExplorer instance.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.CoreForm.metaTable">
+            <summary>
+            TableMetadata implementation instance.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.CoreForm.usrRights">
+            <summary>
+            struct which holds the logged user rights for this module.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.CoreForm.currentIndex">
+            <summary>
+            the current record index within the DataTable.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.CoreForm.actionStatus">
+            <summary>
+            the user action status.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Shared.CoreForm.blayer">
+             <summary>
+            BusinessLayer implementation  
+             </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.#ctor">
+            <summary>
+            Default ctor.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.#ctor(voidsoft.Shared.UserRights)">
+            <summary>
+            
+            </summary>
+            <param name="usrRights"></param>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.InitializeData">
+            <summary>
+            Loads the data from the database, sets up the binding etc. Usually
+            called in the Load event of the form.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.InsertData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.UpdateData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.DeleteData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.ValidateData(System.Windows.Forms.Control@,System.String@)">
+            <summary>
+            Validates the data. This is the dafault implementation which
+            validates only TextBox/QueryControl/CheckedListBox. 
+            </summary>
+            <param name="failedControl">The control on which the validation failed.</param>
+            <param name="failedAttribute">The attribute for which the validation dailed</param>
+            <returns>True if everything is correct.</returns>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.PrintData">
+            <summary>
+            Prints 
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.PrintSingleRow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.BindDataToGrid">
+            <summary>
+            Bind the grid's datasource and
+            set it's styles.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.SetUserRights">
+            <summary>
+            Set the user rights.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.ClearControls">
+            <summary>
+            Clear data from controls
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.LockControls(System.Boolean)">
+            <summary>
+            Lock/unlock the controls to prevent editing.
+            </summary>
+            <param name="locked"></param>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.EnterAddMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.EnterEditMode">
+            <summary>
+            Enters the edit mode. 
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.EnterDeleteMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.DisplayData">
+            <summary>
+            Gets the data from business layer and 
+            display it into controls.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.MoveFirst">
+            <summary>
+            Moves to the first record.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.MoveBack">
+            <summary>
+            Moves back
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.MoveNext">
+            <summary>
+            Moves to the next record.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.MoveLast">
+            <summary>
+            Moves to the last record
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.MoveToIndex(System.Int32)">
+            <summary>
+            Moves to the specified record by index.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:voidsoft.Shared.CoreForm.SendMessage(voidsoft.Shared.EModuleMessage,System.Object[])">
+            <summary>
+            Process messages.
+            </summary>
+            <param name="emsg"></param>
+            <param name="messages"></param>
+        </member>
+        <member name="T:voidsoft.Shared.IDataExplorer">
+            <summary>
+            Interface which defines a DataExplorer.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Shared.DataTableExplorer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.DataTableExplorer.#ctor(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:voidsoft.Shared.DataTableExplorer.GetValue(System.Int32,System.Int32)">
+            <summary>
+            Returns the object from the selected index.
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:voidsoft.Shared.DataTableExplorer.GetValue(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="rowIndex"></param>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:voidsoft.Shared.UserRights">
+            <summary>
+            Describes the user rights for a specified module.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Shared.UserRights.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Structs is holds the user rights for a module
+            </summary>
+            <param name="AllowAdd"></param>
+            <param name="AllowEdit"></param>
+            <param name="AllowDelete"></param>
+            <param name="AllowView"></param>
+            <param name="AllowUpdate"></param>
+            <param name="OtherRights"></param>
+        </member>
+        <member name="T:voidsoft.Shared.EActionStatus">
+            <summary>
+            Enum for user interface status. Used in CoreForm.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Shared.EModuleMessage">
+            <summary>
+            Enum used to send messages from one module to other.
+            </summary>
+        </member>
+    </members>
+</doc>

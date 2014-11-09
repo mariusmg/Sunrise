@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>voidsoft.Controls</name>
+    </assembly>
+    <members>
+        <member name="F:voidsoft.CommonDialogs.DialogComboTextBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogComboTextBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogComboTextBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Controls.MultiSelection">
+            <summary>
+            MultiSelection user control.
+            </summary>
+        </member>
+        <member name="F:voidsoft.Controls.MultiSelection.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.#ctor">
+            <summary>
+            Default ctor. Used at design time.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.#ctor(System.Collections.IList)">
+            <summary>
+            
+            </summary>
+            <param name="ilist"></param>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.#ctor(System.Collections.IDictionary)">
+            <summary>
+            
+            </summary>
+            <param name="idict"></param>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.AddItem(System.Int32)">
+            <summary>
+            Add a new item to the list.
+            </summary>
+            <param name="index">The datasource index.</param>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.AddItem(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.RemoveItem(System.Int32)">
+            <summary>
+            Removes a item form the list.
+            </summary>
+            <param name="index">The item's index from the list.</param>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.RemoveItem(System.String)">
+            <summary>
+            Removes a item form the list.
+            </summary>
+            <param name="item">The item's name</param>
+        </member>
+        <member name="M:voidsoft.Controls.MultiSelection.Clear">
+            <summary>
+            Clears the items.
+            </summary>
+        </member>
+        <member name="P:voidsoft.Controls.MultiSelection.DataSource">
+             <summary>
+            Gets or sets the data source.
+             </summary>
+        </member>
+        <member name="P:voidsoft.Controls.MultiSelection.SelectedValues">
+            <summary>
+            Returns an string array with the added values.
+            </summary>
+        </member>
+        <member name="P:voidsoft.Controls.MultiSelection.SelectedKeys">
+             <summary>
+            Returns the keys.Is  available ONLY when the data source
+            is a IDictionary. Returns null if the data source is IList.
+             </summary>
+        </member>
+        <member name="T:voidsoft.CommonDialogs.DialogList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:voidsoft.CommonDialogs.DialogList.selectedString">
+            <summary>
+            holds the selected string from the list
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogList.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogList.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:voidsoft.CommonDialogs.DialogInput">
+            <summary>
+            Summary description for DialogInput.
+            </summary>
+        </member>
+        <member name="F:voidsoft.CommonDialogs.DialogInput.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogInput.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogInput.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:voidsoft.CommonDialogs.DialogCheckedList">
+            <summary>
+            Summary description for DialogCheckedList.
+            </summary>
+        </member>
+        <member name="F:voidsoft.CommonDialogs.DialogCheckedList.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCheckedList.#ctor(System.Collections.IList)">
+            <summary>
+            Initializes a new istance of the DialogCheckedList using
+            and IList as a data source.
+            </summary>
+            <param name="list">Data source</param>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCheckedList.#ctor(System.Collections.IDictionary)">
+            <summary>
+            Initializes a new istance of the DialogCheckedList using
+            and IDictionary as a data source.
+            </summary>
+            <param name="dictionary">Data source </param>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCheckedList.#ctor(System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dtable"></param>
+            <param name="idIndex"></param>
+            <param name="descriptionIndex"></param>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCheckedList.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCheckedList.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:voidsoft.CommonDialogs.DialogCheckedList.SelectedText">
+            <summary>
+            Returns the selected items;
+            </summary>
+        </member>
+        <member name="P:voidsoft.CommonDialogs.DialogCheckedList.SelectedKeys">
+            <summary>
+            Returns the selected keys.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Controls.QueryControl">
+            <summary>
+            QueryControl
+            </summary>
+        </member>
+        <member name="F:voidsoft.Controls.QueryControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.QueryControl.#ctor">
+            <summary>
+            Default ctor. Used when the control is in design view. 
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.QueryControl.#ctor(System.Collections.IList)">
+            <summary>
+            Ctor which sets the data source to an IList.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:voidsoft.Controls.QueryControl.#ctor(System.Collections.IDictionary)">
+            <summary>
+            Ctor which sets the data source to an IDictionary.
+            </summary>
+            <param name="idict"></param>
+        </member>
+        <member name="M:voidsoft.Controls.QueryControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.QueryControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.QueryControl.SetData(System.Int32)">
+            <summary>
+            Sets the data from the specified index.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:voidsoft.Controls.QueryControl.SelectedText">
+            <summary>
+            Gets the selected text.
+            </summary>
+        </member>
+        <member name="P:voidsoft.Controls.QueryControl.SelectedIndex">
+            <summary>
+            Get the selected index.
+            </summary>
+        </member>
+        <member name="P:voidsoft.Controls.QueryControl.SelectedID">
+            <summary>
+            Returns the ID of the selected item. The data source
+            must be 
+            </summary>
+        </member>
+        <member name="P:voidsoft.Controls.QueryControl.DataSource">
+            <summary>
+            Gets/sets the data source.
+            </summary>
+        </member>
+        <member name="T:voidsoft.Controls.ControlValidator">
+            <summary>
+            Control validation 
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.ControlValidator.ValidateControl(System.Windows.Forms.Control,System.String,System.String@)">
+            <summary>
+            Validates the data entered/selected in a control.
+            </summary>
+            <param name="ctl">The validated control </param>
+            <param name="attributes">The attributes by which the control is validated</param>
+            <param name="failedAttribute">In case the control does not pass validation this field
+            holds the name of the attribute for which the validation failed. Is the validation is ok (returns true)
+            this parameter should be ignored.</param>
+            <returns></returns>
+        </member>
+        <member name="M:voidsoft.Controls.ControlValidator.ValidateControl(System.Windows.Forms.Control,System.String@)">
+            <summary>
+            Validates the data entered/selected in a control.
+            </summary>
+            <param name="ctl">The validated control. Is the case the attributes are taken 
+            from the control's tag</param>
+            <param name="failedAttribute">In case the control does not pass validation this field
+            holds the name of the attribute for which the validation failed. Is the validation is ok (returns true)
+            this parameter should be ignored</param>
+            <returns></returns>
+        </member>
+        <member name="T:voidsoft.Controls.DataGridStyles">
+            <summary>
+            Allows data grid styles customizations.
+            </summary>
+        </member>
+        <member name="M:voidsoft.Controls.DataGridStyles.SetGridStyle(System.Windows.Forms.DataGrid,System.Data.DataTable,System.Int32[])">
+            <summary>
+            Allows to set default table styles to a data grid using the 
+            column indexes.
+            </summary>
+            <param name="dg">DataGris to which we set the style</param>
+            <param name="dtable">DataSource</param>
+            <param name="indexes">DataColumn indexes from the data source which will be included</param>
+        </member>
+        <member name="T:voidsoft.CommonDialogs.DialogCombo">
+            <summary>
+            Dialog which allows the user to select data from a combobox.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCombo.#ctor(System.Collections.IList)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCombo.#ctor(System.Collections.IDictionary)">
+            <summary>
+            
+            </summary>
+            <param name="idict"></param>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCombo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:voidsoft.CommonDialogs.DialogCombo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

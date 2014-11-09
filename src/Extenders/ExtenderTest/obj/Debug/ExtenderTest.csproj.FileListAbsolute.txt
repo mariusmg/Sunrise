@@ -1,0 +1,8 @@
+c:\2\src\Sunrise.Main\bin\ExtenderTest.dll
+c:\2\src\Sunrise.Main\bin\ExtenderTest.pdb
+c:\2\src\Extenders\ExtenderTest\obj\Debug\ExtenderTest.csprojResolveAssemblyReference.cache
+c:\2\src\Extenders\ExtenderTest\obj\Debug\ExtenderTest.Form1.resources
+c:\2\src\Extenders\ExtenderTest\obj\Debug\ExtenderTest.TestNavigationForm.resources
+c:\2\src\Extenders\ExtenderTest\obj\Debug\ExtenderTest.csproj.GenerateResource.Cache
+c:\2\src\Extenders\ExtenderTest\obj\Debug\ExtenderTest.dll
+c:\2\src\Extenders\ExtenderTest\obj\Debug\ExtenderTest.pdb

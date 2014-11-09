@@ -1,0 +1,37 @@
+
+
+1. What is Sunrise.
+
+Sunrise is a "full stack" framework for developing Windows based business applications.
+
+
+Core components:
+
+
+
+
+voidsoft.ObjectWire.Shared.CoreForm 
+
+	Virtual functions :
+
+
+	Initialization operations :
+
+	
+	-InitializeBusinessObject();
+	   Initialize the persistance object;
+   	  
+
+	-InitializeData();
+	   Loads data from the database;
+
+
+
+
+
+	DataOperations:
+
+	-LoadData();	
+	-InsertData();
+	-UpdateData();
+	-DeleteData();
